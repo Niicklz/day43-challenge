@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
 import { FeedBack } from "./components/FeedBack";
-import hearth from "../public/hearth.gif"
-import Neutral from "../public/Neutral.png"
-import Satisfied from "../public/Satisfied.png"
-import unHappy from "../public/UnHappy.png"
+import hearth from "/public/hearth.gif"
+import Neutral from "/public/Neutral.png"
+import Satisfied from "/public/Satisfied.png"
+import unHappy from "/public/UnHappy.png"
 
 export const App = () => {
     const [currentFeedBackSelected, setCurrentFeedBackSelected] = useState("")
@@ -39,7 +39,7 @@ export const App = () => {
       <div className="card-feedback-container">
         <FeedBack img={unHappy} type="unHappy" currentFeedBackSelected={currentFeedBackSelected} handleChangeFocus={handleChangeFocus} />
         <FeedBack img={Neutral} type="Neutral" currentFeedBackSelected={currentFeedBackSelected} handleChangeFocus={handleChangeFocus} />
-        <FeedBack  img={Neutral} type="Satisfied" currentFeedBackSelected={currentFeedBackSelected} handleChangeFocus={handleChangeFocus} />
+        <FeedBack  img={Satisfied} type="Satisfied" currentFeedBackSelected={currentFeedBackSelected} handleChangeFocus={handleChangeFocus} />
       </div>
       <button className="send" onClick={handleClick}>Send Review</button></> }
       {feedbackSended && <>
