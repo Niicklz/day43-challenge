@@ -2,6 +2,7 @@ import React from "react";
 import "./FeedBack.css";
 
 export const FeedBack = ({
+    img,
   type,
   currentFeedBackSelected,
   handleChangeFocus,
